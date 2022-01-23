@@ -1,2 +1,22 @@
 # self-driving-car-nvidia-model
 Making a self driving car using Nvidia model on a simulator
+
+# WARNING: This code was using TTensorflow-GPU, make sure to install Nvidia Toolkit 11.0-11.2. Currently those versions are the only ones which are compatible with Tensorflow-GPU. Make sure you have the CuDNN corresponding to your Toolkit version. You can remove Tensorflow-GPU and install Tensorflow if you do not have an Nvidia graphic card, it will use your GPU insted. <br>
+## Step 1:
+Download the driving simulator "Term1" from the following repository: <br>
+https://github.com/udacity/self-driving-car-sim/blob/master/README.md
+
+## Step 2:
+Create an empity folder and call it "myData"
+
+## Step 3:
+Record your data in the training mode and choose the myData folder to save the data <br>
+  ### Warning: It is recommended that you use your keyboard to record your data, do from 3 to 5 laps; stop recording; turn the car arround; and do 3 to 5 laps more.
+  When you run the main code, the histogram should look like the picture of a histogram in this repository.
+  
+## Step 4:
+Run the main code, check out the histogram that will be plotted, there is a part of the code where we balance our data, this is why two histograms are plotted. It indicates the ammount of data for each Steering Angle values. Usually there is a peak of values in the zero. Now if your second graph istill has too much zero values, go to the "utils.py" code, there you can change the variable "samples_bin" so you can suit better to the data you have. Just remember that we want to have a good ammount of zero values, because most of the time the car goes straight, due the fact we used the keyboard to record data.
+
+## Step 5:
+Wait it to finish the training and run the "test_model.py" code. Now open the simulator again and select the autonomus option, wait a little to the code connect, and see the results <br>
+### Note: You can change the training option on the "history" variable, changing the number of epochs, steps_per_epoch or validation_steps, can make your model more or less accurate, changing those values will affect the traning time. 
