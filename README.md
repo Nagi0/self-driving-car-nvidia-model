@@ -15,7 +15,9 @@ Record your data in the training mode and choose the myData folder to save the d
   When you run the main code, the histogram should look like the picture of a histogram in this repository.
   
 ## Step 4:
-Run the main code, check out the histogram that will be plotted, there is a part of the code where we balance our data, this is why two histograms are plotted. It indicates the ammount of data for each Steering Angle values. Usually there is a peak of values in the zero. 
+Run the main code, check out the histogram that will be plotted, there is a part of the code where we balance our data, this is why two histograms are plotted. It indicates the ammount of data for each Steering Angle values. Usually there is a peak of values in the zero. The graph below shows the not balanced data:
+![alt text](https://raw.githubusercontent.com/Nagi0/self-driving-car-nvidia-model/main/graph_1.png)
+The following is the balanced data graph: 
 ![alt text](https://raw.githubusercontent.com/Nagi0/self-driving-car-nvidia-model/main/graph_2.png)
 Now, if your graph above istill has too much zero values, go to the "utils.py" code, there you can change the variable "samples_bin" so you can suit better to the data you have. Just remember that we want to have a good ammount of zero values, because most of the time the car goes straight, due the fact we used the keyboard to record data.
 
