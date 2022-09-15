@@ -11,7 +11,7 @@ Create an empity folder and call it "myData"
 
 ## Step 3:
 Record your data in the training mode and choose the myData folder to save the data <br>
-  ### Warning: It is recommended that you use your keyboard to record your data, do from 3 to 5 laps; stop recording; turn the car arround; and do 3 to 5 laps more.
+  ### Warning: It is recommended that you use your keyboard to record data, do from 3 to 5 laps; stop recording; turn the car arround; and do from 3 to 5 additional laps.
   When you run the main code, the histogram should look like the picture of a histogram in this repository.
   
 ## Step 4:
