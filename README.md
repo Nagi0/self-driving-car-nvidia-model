@@ -1,7 +1,7 @@
 # self-driving-car-nvidia-model
 Making a self driving car using Nvidia model on a simulator
 
-# WARNING: This code uses Tensorflow-GPU, make sure to install Nvidia Toolkit 11.0-11.2. Currently those are the only versions which are compatible with Tensorflow-GPU. Make sure you have the CuDNN that corresponds to your Toolkit version. If you do not have an Nvidia graphic card you can remove Tensorflow-GPU from the requirements.txt and install Tensorflow, it will use your GPU insted. <br>
+# WARNING: This code uses Tensorflow-GPU, make sure to install Nvidia Toolkit 11.0-11.2. Currently those are the only versions compatible with Tensorflow-GPU. Make sure you have the CuDNN that corresponds to your Toolkit version. If you do not have an Nvidia graphic card you can remove Tensorflow-GPU from the requirements.txt and install Tensorflow, it will use your CPU insted. <br>
 ## Step 1:
 Download the driving simulator "Term1" from the following repository: <br>
 https://github.com/udacity/self-driving-car-sim/blob/master/README.md
